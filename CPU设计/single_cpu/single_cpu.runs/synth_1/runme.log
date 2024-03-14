@@ -1,0 +1,606 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5548 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 356.113 ; gain = 99.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/Top.v:2]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/display.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/display.v:35]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/display.v:11]
+WARNING: [Synth 8-6014] Unused sequential element clk_400Hz_reg was removed.  [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/display.v:13]
+INFO: [Synth 8-256] done synthesizing module 'display' (1#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/display.v:2]
+INFO: [Synth 8-638] synthesizing module 'next_pc' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/next_pc.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/next_pc.v:25]
+INFO: [Synth 8-256] done synthesizing module 'next_pc' (2#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/next_pc.v:2]
+INFO: [Synth 8-638] synthesizing module 'IM_unit' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.runs/synth_1/.Xil/Vivado-452-LAPTOP-1RD9C71S/realtime/IM_unit_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'IM_unit' (3#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.runs/synth_1/.Xil/Vivado-452-LAPTOP-1RD9C71S/realtime/IM_unit_stub.v:6]
+WARNING: [Synth 8-350] instance 'IM' of module 'IM_unit' requires 6 connections, but only 4 given [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/Top.v:77]
+INFO: [Synth 8-638] synthesizing module 'ctr' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/ctr.v:23]
+WARNING: [Synth 8-3848] Net eq in module/entity ctr does not have driver. [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/ctr.v:24]
+INFO: [Synth 8-256] done synthesizing module 'ctr' (4#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/ctr.v:23]
+WARNING: [Synth 8-350] instance 'mainctr' of module 'ctr' requires 12 connections, but only 11 given [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/Top.v:85]
+INFO: [Synth 8-638] synthesizing module 'aluctr' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/aluctr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'aluctr' (5#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/aluctr.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/RegFile.v:2]
+	Parameter ADDR bound to: 5 - type: integer 
+	Parameter NUMB bound to: 32 - type: integer 
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (6#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/RegFile.v:2]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/ALU.v:25]
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/ALU.v:46]
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/ALU.v:25]
+WARNING: [Synth 8-350] instance 'alu' of module 'alu' requires 10 connections, but only 9 given [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/Top.v:119]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/signext.v:2]
+INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/signext.v:2]
+INFO: [Synth 8-638] synthesizing module 'DM_unit' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:23]
+WARNING: [Synth 8-324] index 16 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 17 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 18 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 19 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 31 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 32 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 33 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 34 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 35 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 36 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 37 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 38 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 39 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 40 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 41 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 42 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 43 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 44 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 45 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 46 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 47 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 48 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 49 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 50 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 51 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 52 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 53 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 54 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 55 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 56 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 57 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 58 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 59 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 60 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 61 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 62 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 63 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 64 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 65 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 66 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 67 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 68 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 69 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 70 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 71 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 72 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 73 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 74 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 75 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 76 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 77 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 78 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 79 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 80 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 81 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 82 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 83 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 84 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 85 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 86 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 87 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 88 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 89 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 90 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 91 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 92 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 93 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 94 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 95 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 96 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 97 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 98 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 99 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 100 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 101 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 102 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 103 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 104 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 105 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 106 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 107 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 108 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 109 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 110 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 111 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 112 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 113 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 114 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+WARNING: [Synth 8-324] index 115 out of range [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:37]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'DM_unit' (9#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/DM_unit.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'DMAdr' does not match port width (16) of module 'DM_unit' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/Top.v:134]
+INFO: [Synth 8-256] done synthesizing module 'top' (10#1) [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/Top.v:2]
+WARNING: [Synth 8-3331] design ctr has unconnected port eq
+WARNING: [Synth 8-3331] design next_pc has unconnected port instruction[31]
+WARNING: [Synth 8-3331] design next_pc has unconnected port instruction[30]
+WARNING: [Synth 8-3331] design next_pc has unconnected port instruction[29]
+WARNING: [Synth 8-3331] design next_pc has unconnected port instruction[28]
+WARNING: [Synth 8-3331] design next_pc has unconnected port instruction[27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 408.816 ; gain = 152.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 408.816 ; gain = 152.691
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.runs/synth_1/.Xil/Vivado-452-LAPTOP-1RD9C71S/dcp1/IM_unit_in_context.xdc] for cell 'IM'
+Finished Parsing XDC File [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.runs/synth_1/.Xil/Vivado-452-LAPTOP-1RD9C71S/dcp1/IM_unit_in_context.xdc] for cell 'IM'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 735.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 735.832 ; gain = 479.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 735.832 ; gain = 479.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 735.832 ; gain = 479.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "regDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "regWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ExtOp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "aluop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "jmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'ALUCtr_reg' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/aluctr.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'F_reg' [C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.srcs/sources_1/new/ALU.v:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 735.832 ; gain = 479.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---XORs : 
+	               32 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 50    
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  25 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 50    
+	  15 Input      1 Bit        Muxes := 10    
+	  25 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+Module next_pc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ctr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 8     
+Module aluctr 
+Detailed RTL Component Info : 
++---Muxes : 
+	  25 Input      4 Bit        Muxes := 1     
+	  25 Input      1 Bit        Muxes := 2     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---XORs : 
+	               32 Bit    Wide XORs := 1     
++---Muxes : 
+	  15 Input      1 Bit        Muxes := 2     
+Module signext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DM_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "mainctr/aluop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm/RAM_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'next_pc/add4_reg[0]' (FDR) to 'next_pc/pc_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 735.832 ; gain = 479.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 785.789 ; gain = 529.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 788.594 ; gain = 532.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module IM has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |IM_unit       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |IM_unit |     1|
+|2     |BUFG    |     5|
+|3     |CARRY4  |    36|
+|4     |LUT1    |    29|
+|5     |LUT2    |   113|
+|6     |LUT3    |   181|
+|7     |LUT4    |   105|
+|8     |LUT5    |   258|
+|9     |LUT6    |  1249|
+|10    |MUXF7   |   335|
+|11    |MUXF8   |    28|
+|12    |FDCE    |  1536|
+|13    |FDRE    |    66|
+|14    |FDSE    |     1|
+|15    |LD      |    38|
+|16    |IBUF    |     7|
+|17    |OBUF    |   188|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        |  4207|
+|2     |  Smg     |display |    19|
+|3     |  alu     |alu     |   152|
+|4     |  aluctr1 |aluctr  |    80|
+|5     |  dm      |DM_unit |   790|
+|6     |  next_pc |next_pc |   129|
+|7     |  regfile |RegFile |  2803|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 33 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 834.812 ; gain = 251.672
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 834.812 ; gain = 578.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 444 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  LD => LDCE: 38 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+110 Infos, 115 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 834.812 ; gain = 590.176
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HUAWEI/Desktop/single_cpu/single_cpu/single_cpu.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 834.812 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 24 23:16:40 2022...

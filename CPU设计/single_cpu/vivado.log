@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec 19 16:23:11 2022
+# Process ID: 4056
+# Current directory: C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17596 C:\Users\HUAWEI\Desktop\学习资料\计算机组成原理\实验\21307371 吴臻 单周期cpu\single_cpu（用于仿真）\single_cpu\single_cpu.xpr
+# Log file: C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/vivado.log
+# Journal file: C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'IM_unit' generated file not found 'c:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sources_1/ip/IM_unit_2/IM_unit.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'IM_unit' generated file not found 'c:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sources_1/ip/IM_unit_2/IM_unit_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'IM_unit' generated file not found 'c:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sources_1/ip/IM_unit_2/IM_unit_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'IM_unit' generated file not found 'c:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sources_1/ip/IM_unit_2/IM_unit_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'IM_unit' generated file not found 'c:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sources_1/ip/IM_unit_2/IM_unit_sim_netlist.vhdl'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim/IM_unit.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim/prgmip32.COE'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj topsim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 014f47b70a4a4a16a686c3cb4047c6ee --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 3 for port SW [C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sim_1/new/topsim.v:23]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port DMAdr [C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sources_1/new/Top.v:147]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module topsim.uut.IM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 824.676 ; gain = 7.184
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 20 16:19:09 2022...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Dec  7 23:43:31 2022
+# Process ID: 10272
+# Current directory: C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 -notrace

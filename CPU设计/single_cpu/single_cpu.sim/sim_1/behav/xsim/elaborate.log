@@ -1,0 +1,10 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 014f47b70a4a4a16a686c3cb4047c6ee --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 3 for port SW [C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sim_1/new/topsim.v:23]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port DMAdr [C:/Users/HUAWEI/Desktop/学习资料/计算机组成原理/实验/21307371 吴臻 单周期cpu/single_cpu（用于仿真）/single_cpu/single_cpu.srcs/sources_1/new/Top.v:147]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
